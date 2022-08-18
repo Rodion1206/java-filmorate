@@ -16,15 +16,15 @@ public class UserController {
 
     @PostMapping
     public User addUser(@Valid @RequestBody User user) {
+        log.info("request for add user");
         users.add(user);
-        log.info("add user");
         return user;
     }
 
     @PutMapping
     public User updateUser(@Valid @RequestBody User user) {
+        log.info("request for update user");
         users.add(user);
-        log.info("update user");
         return user;
     }
 
