@@ -1,6 +1,5 @@
 package ru.yandex.practicum.filmorate.validators.annotations;
 
-
 import ru.yandex.practicum.filmorate.validators.FilmDateValidator;
 
 import javax.validation.Constraint;
