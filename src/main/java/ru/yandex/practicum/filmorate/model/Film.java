@@ -1,14 +1,10 @@
 package ru.yandex.practicum.filmorate.model;
 
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
-
 import lombok.Data;
 import ru.yandex.practicum.filmorate.validators.annotations.CorrectFilmDate;
 
+import javax.validation.constraints.*;
 import java.time.LocalDate;
 @Data
 public class Film {
