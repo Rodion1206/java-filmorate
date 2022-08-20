@@ -1,18 +1,18 @@
 package ru.yandex.practicum.filmorate.model;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import ru.yandex.practicum.filmorate.validators.annotations.CorrectFilmDate;
 
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 @Data
+@AllArgsConstructor
 public class Film {
-    private int id;
+    private Integer id;
 
     @NotEmpty(message = "Name can't be empty")
-    @NotBlank(message = "Name can't be blank")
-    @NotNull(message = "Name can't be null")
     private String name;
 
     @Size(max = 200, message = "can't be more than 200 symbols")
@@ -22,5 +22,5 @@ public class Film {
     private LocalDate releaseDate;
 
     @Positive(message = "Duration in seconds should be positive")
-    private Long duration;
+    private int duration;
 }
